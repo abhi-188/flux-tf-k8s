@@ -30,7 +30,7 @@ spec:
     
     resource "aws_instance" "ec2_instance" {
       ami           = "ami-0c55b159cbfafe1f0"
-      instance_type = "t3.nano"
+      instance_type = "t3.micro"
       security_groups = [aws_security_group.ec2_sg.name]
       user_data = <<-EOF
                 #!/bin/bash
